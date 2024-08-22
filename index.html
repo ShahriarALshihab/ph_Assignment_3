@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -22,7 +22,28 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+ <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }, 
+                 fontFamily: {
+          sans: ['Manrope', 'sans-serif'],
+        },
+        }
+      }
+    }
+  </script>
 
     <style>
       .font-manrope {
@@ -30,8 +51,44 @@
       }
     </style>
   </head>
-  <body class="font-manrope">
+  <body class="font-manrope ">
+   
 
-    
+    <header class="bg-gradient-to-r from-white-0 to-white-900">
+
+         <!-- NavBar -->
+    <nav class="navbar mt-6 md:mt-8 lg:mt-12 mx-auto ">
+      
+        <div class="navbar-start pl-6">
+          <a href="" class="border-0 border-white-50 rounded-full text-2xl bg-[#ABEF5F]" ><i class="fa-solid fa-arrow-right -rotate-45 p-2 "></i></a>
+          <a class=" text-4xl bg-none font-extrabold">Rinterio</a>
+        </div>
+        <div class="navbar-center hidden lg:flex">
+          <ul class="menu menu-horizontal px-1 items-center text-lg ">
+            <li><a class="text-lg font-bold">Home</a></li>
+            <li>
+              <a class="text-[#737373]">Service</a>
+            </li>
+            <li><a class="text-[#737373]">Portfolio</a></li>
+            <li><a class="text-[#737373]">Blogs</a></li>
+            <li><a class="text-[#737373]">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="navbar-end  mr-4 md:mr-12 space-x-3">
+             <a href="#" class="hidden md:flex border text-2xl border-white-900 rounded-full"><i class="fa-solid fa-magnifying-glass p-3"></i></a>
+
+              <a href="#" class="hidden md:flex border text-2xl border-white-900 rounded-full"><i class="fa-solid fa-cart-shopping p-3"></i></a>
+
+          <a class="btn hidden text-xl font-extrabold bg-[#ABEF5F] rounded-full px-6  md:flex">Book Consult <span class="border-0 rounded-full text-white text-2xl bg-[#000]"> <i class="fa-solid fa-arrow-right -rotate-45 p-1 "></i></span></a>
+          <a href="#" class="lg:hidden border text-2xl border-white-900 rounded-full"><i class="fa-solid fa-bars p-3 "></i></a>
+
+        </div>
+      
+    </nav>
+    </header>
+
+    <main></main>
+
+    <footer></footer>
   </body>
 </html>
